@@ -4,6 +4,10 @@
 
 このプロジェクトは、React + TypeScript + Vite + MUI を使用して構築されたシンプルなフロントエンドアプリケーションです。2 つの主な機能を備えています。
 
+## Demo
+
+[SnappyKit Demo](https://todayisark.github.io/snappykit-demo/)
+
 ## 🚀 主な機能
 
 ### 1. 割り勘計算機

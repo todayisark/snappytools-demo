@@ -4,6 +4,10 @@
 
 This project is a simple frontend application built with **React**, **TypeScript**, **Vite**, and **Material UI (MUI)**. It includes two main features.
 
+## Demo
+
+[SnappyKit Demo](https://todayisark.github.io/snappykit-demo/)
+
 ## 🚀 Main Features
 
 ### 1. Split Bill Calculator
