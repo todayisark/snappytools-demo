@@ -32,7 +32,7 @@
 ## 📦 インストールと実行方法
 
 ```
-git clone
+git clone https://github.com/todayisark/snappykit-demo.git
 npm install
 npm run dev
 ```

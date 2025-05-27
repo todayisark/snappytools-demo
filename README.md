@@ -32,7 +32,7 @@ This project is a simple frontend application built with **React**, **TypeScript
 ## 📦 Installation and Running
 
 ```bash
-git clone https://github.com/yourname/your-repo.git
+git clone https://github.com/todayisark/snappykit-demo
 npm install
 npm run dev
 ```
