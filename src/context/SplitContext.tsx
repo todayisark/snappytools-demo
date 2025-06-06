@@ -19,6 +19,8 @@ type SplitContextType = {
   setBaseCurrency: Dispatch<SetStateAction<string>>;
   targetCurrency: string;
   setTargetCurrency: Dispatch<SetStateAction<string>>;
+  useSingleCurrency: boolean;
+  setUseSingleCurrency: Dispatch<SetStateAction<boolean>>;
 };
 
 const SplitContext = createContext<SplitContextType | null>(null);
@@ -84,6 +86,18 @@ export function SplitContextProvider({ children }: { children: ReactNode }) {
     return "KRW";
   });
 
+  const [useSingleCurrency, setUseSingleCurrency] = useState<boolean>(() => {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (cached) {
+      try {
+        return JSON.parse(cached).useSingleCurrency ?? false;
+      } catch {
+        return false;
+      }
+    }
+    return true;
+  });
+
   // 自动保存到缓存
   useEffect(() => {
     const cache = {
@@ -92,9 +106,17 @@ export function SplitContextProvider({ children }: { children: ReactNode }) {
       exchangeRate,
       baseCurrency,
       targetCurrency,
+      useSingleCurrency,
     };
     localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
-  }, [participants, expenses, exchangeRate, baseCurrency, targetCurrency]);
+  }, [
+    participants,
+    expenses,
+    exchangeRate,
+    baseCurrency,
+    targetCurrency,
+    useSingleCurrency,
+  ]);
 
   return (
     <SplitContext.Provider
@@ -109,6 +131,8 @@ export function SplitContextProvider({ children }: { children: ReactNode }) {
         setBaseCurrency,
         targetCurrency,
         setTargetCurrency,
+        useSingleCurrency,
+        setUseSingleCurrency,
       }}
     >
       {children}

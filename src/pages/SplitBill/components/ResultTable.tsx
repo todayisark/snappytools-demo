@@ -67,6 +67,7 @@ const ResultTable = () => {
             value={settleCurrency}
             onChange={(e) => setSettleCurrency(e.target.value)}
             label="Settle Currency"
+            disabled={context.useSingleCurrency}
           >
             <MenuItem value={baseCurrency}>{baseCurrency}</MenuItem>
             <MenuItem value={targetCurrency}>{targetCurrency}</MenuItem>

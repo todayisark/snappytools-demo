@@ -40,7 +40,7 @@ function printNetworkAddress() {
 }
 
 export default defineConfig({
-  base: "/snappykit/",
+  base: "/snappykit-demo/",
   plugins: [react(), printNetworkAddress()],
   resolve: {
     alias: {
