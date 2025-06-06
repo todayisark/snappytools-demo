@@ -1,3 +1,5 @@
+/// <reference types="node" />
+
 import react from "@vitejs/plugin-react";
 import os from "os";
 import path from "path";
