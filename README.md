@@ -1,4 +1,4 @@
-🌐 [日本語](README.ja.md)  📖[项目故事](项目故事.md)
+🌐 [日本語](README.ja.md) 
 
 # Frontend Portfolio: Split Bill Calculator & LED Text Scroller
 
@@ -7,6 +7,13 @@ This project is a simple frontend application built with **React**, **TypeScript
 ## Demo
 
 [SnappyKit Demo](https://todayisark.github.io/snappykit-demo/)
+
+## 📖 Project Story
+
+[项目故事](项目故事.md)
+
+[プロジェクトストーリー](プロジェクトストーリー.md)
+
 
 ## 🚀 Main Features
 
