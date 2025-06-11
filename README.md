@@ -1,4 +1,4 @@
-🌐 [日本語](README.ja.md)
+🌐 [日本語](README.ja.md)  📖[项目故事](项目故事.md)
 
 # Frontend Portfolio: Split Bill Calculator & LED Text Scroller
 
