@@ -1,4 +1,8 @@
-🌐 [日本語](README.ja.md) 
+## 📢 Notice
+
+**This project has been migrated to Next.js and future updates will be made in the** [snappykit-next](https://github.com/todayisark/snappykit-next)
+
+---
 
 # Frontend Portfolio: Split Bill Calculator & LED Text Scroller
 
@@ -7,13 +11,6 @@ This project is a simple frontend application built with **React**, **TypeScript
 ## Demo
 
 [SnappyKit Demo](https://todayisark.github.io/snappykit-demo/)
-
-## 📖 Project Story
-
-[项目故事](项目故事.md)
-
-[プロジェクトストーリー](プロジェクトストーリー.md)
-
 
 ## 🚀 Main Features
 
