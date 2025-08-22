@@ -4,6 +4,10 @@ A multi-tool web app built with Next.js 14 (App Router), TypeScript, Material UI
 
 For the legacy Vite-based implementation, see the react-vite branch.The latest Next.js codebase is not publicly available.
 
+## Demo
+
+[https://snappytools-next.vercel.app/](https://snappytools-next.vercel.app/)
+
 ## 🚀 Features
 
 - Split Bill
@@ -181,117 +185,3 @@ npm run lint
 ## 📄 License
 
 No license file is provided in this repository. Add one if you intend to open source.
-
-�🌐 [日本語](README.ja.md)
-
-# SnappyTools Next.js - Multi-functional Web Application
-
-A modern web application built with **Next.js 14**, **TypeScript**, **Material UI**, and **Supabase**. The project includes multiple practical tools and functional modules.
-
-## 🚀 Main Features
-
-### 1. Split Bill Calculator
-
-- Supports multi-person bill splitting calculations
-- Real-time exchange rate conversion
-- Expense distribution and result display
-- Responsive design with mobile support
-
-### 2. LED Text Scroller
-
-- Mobile-friendly LED-style scrolling text
-- Fully customizable text, fonts, colors, and scroll speed
-- Supports both landscape and portrait orientations
-- Real-time preview effects
-
-### 3. User Authentication System
-
-- Supabase-based user registration and login
-- Secure authentication flow
-- User data management
-
-### 4. Record Management
-
-- Save and view historical records
-- Data persistence storage
-
-## 🛠 Tech Stack
-
-- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
-- **Language**: TypeScript
-- **UI Library**: [Material UI (MUI)](https://mui.com/)
-- **Database**: [Supabase](https://supabase.com/)
-- **Authentication**: Supabase Auth
-- **Styling**: SASS + Emotion
-- **Internationalization**: i18next
-- **HTTP Client**: Axios
-
-## 📦 Installation and Running
-
-```bash
-# Clone the project
-git clone https://github.com/todayisark/snappytools-next.git
-cd snappytools-next
-
-# Install dependencies
-npm install
-
-# Run in development mode
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
-```
-
-The application will start at `http://localhost:4321`
-
-## 📁 Project Structure
-
-```
-snappytools-next/
-├── public/                 # Static resource files
-├── src/
-│   ├── app/               # Next.js App Router
-│   │   ├── api/           # API routes
-│   │   │   └── auth/      # Authentication related APIs
-│   │   ├── auth/          # Authentication pages
-│   │   ├── ledboard/      # LED scrolling functionality
-│   │   ├── login/         # Login page
-│   │   ├── records/       # Record management
-│   │   ├── settings/      # Settings page
-│   │   ├── splitbill/     # Split bill calculator
-│   │   └── test/          # Test page
-│   ├── components/        # Reusable components
-│   ├── context/           # React Context
-│   ├── types/             # TypeScript type definitions
-│   └── utils/             # Utility functions
-├── package.json           # Project configuration
-└── next.config.mjs       # Next.js configuration
-```
-
-## 🔧 Environment Configuration
-
-The project uses Supabase as the backend service and requires the following environment variables:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-## 🧩 Development Roadmap
-
-- [ ] Add more LED font options
-- [ ] Export split bill results (CSV/image)
-- [ ] Data backup and synchronization features
-- [ ] Enhanced multi-language support
-- [ ] Performance optimization and caching strategies
-- [ ] Unit tests and integration tests
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-a
